@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir estas imagens em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Áudios</h1>
+    <p><strong>Dica de como adquirir um audio gratuito e com direitos autorais:</strong> <br>Se você tem um canal no YouTube, então:</p>
+    <ol>
+        <li>Acesse o Painel de Controle (YouTube Studio);</li>
+        <li>Clique em Biblioteca de Audio (No canto esquerdo da tela);</li>
+        <li>Na Biblioteca de Audios do YouTube, clique em: 
+            <ol type="a">
+                <li><strong>Atribuição:</strong></li>
+                    <ul>
+                        <li><strong>Atribuição Necessária</strong>: Neste caso, além do áudio que for inserido no seu site, você deve inserir também as linhas exigida; </li>
+                        <li><strong>Atribuição não Necessária</strong>: Neste caso você está livre de inserir atribuições;</li>
+                        <li><strong>Todas as Licenças</strong>: Aqui será apresentado todos os áudios com direitos autorais.</li>
+                    </ul> 
+                <li><strong>Genero;</strong></li>  
+                <li><strong>Duração;</strong></li>
+                <li><strong>Etc...</strong></li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2>Reproduzindo Áudios</h2>
+    <p><strong>Vamos aprender a reproduzir áudio no HTML5. 
+        <br>Ex:</strong>
+        &ltaudio src="aqui vai a mídia" controls autoplay&gt&lt/audio&gt
+    </p>
+    <ul>
+        <li>A tag <strong>controls</strong> serve para possibilitar o úsuario controlar o áudio, isto é, dar play, pausar, retomar, adintar e voltar o áudio.</li>
+        <li><strong>Autoplay</strong> serve para reproduzir o áudio automáticamente quando o usuário acessar o site. Isso é útil caso o Dev deseje que o site tenha uma música de fundo.</li>
+    </ul>
+    <audio preload="metadata" controls loop autoplay>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compatível com o arquivo oferecido nesse site, <a href="midia/happy-mistake.mp3">clique aqui</a> e faça o dowload do arquivo.</p>
+    </audio>
+    <p><strong>Obs: </strong>Existem três formatos de áudio: MP3,WAV e OGG. Nem todo navegador é compativel com os três. Potanto, neste caso, nós usamos as tags <strong>source</strong> e <strong>type</strong>. Ex:</p>
+    <p><pre style="font-size: 14px;">
+     &ltaudio preload="auto ,metadata ou none" controls loop autoplay&gt
+        &ltsource src="midia/happy-mistake.mp3" type="audio/mpeg"&gt
+        &ltsource src="midia/happy-mistake.ogg" type="audio/ogg"&gt
+        &ltsource src="midia/happy-mistake.wav" type="audio/wav"&gt
+    &lt/audio&gt
+        </pre>
+    </p>
+    <p>Neste caso, o site tentará reproduzir o áudio com o formato compatível com o navegador do usuário. Caso nenhum dos formatos for compatível, é necessário inserir uma tag para dowload do arquivo.</p>
+    <h3>Parâmetros de Áudio</h3>
+    <ol>
+        <li><strong>Preload</strong> 
+            <ol type="a">
+                <li><strong>auto:</strong> é o padrão, porém, é perigoso, porque neste caso o site só será considerado carregado quando carregar todo o áudio também, e geralmente, quando se trata de áudios, os arquivos são pesados.</li>
+                <li><strong>metadata:</strong> será carregado apenas alguns dados como arquivo, nome do arquivo, duração e etc...</li>
+                <li><strong>none:</strong> só será carregado qundo o usuário dar play nos controles.</li>
+            </ol>
+        </li>
+        <li><strong>Controls:</strong> Torna os controles do arquivo visíveis no site. Controles do tipo, pausar, retomar, adiantar e voltar.</li>
+        <li><strong>Loop:</strong> Faz o áudio reproduzir automático quando finalizado.</li>
+        <li><strong>Autoplay:</strong> Inicia a reprodução automática ao carregar a página.</li>
+    </ol>
+</body>
+</html>

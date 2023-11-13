@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Videos</h1>
+    <ol><strong>DICAS:</strong>
+    <li>Site para baixar vídeos gratuitos e com direitos autorais: <a href="https://www.pexels.com/pt-br" target="_blank">https://www.pexels.com/pt-br</a></li>
+    <li>Site de programa para converter os vídeos: <a href="https://handbrake.fr" target="_blank"> https://handbrake.fr</a></li>
+    </ol>
+    <p>Falando sobre vídeos, temos quatro formatos: MP4,M4V,webM e OGV.</p>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>Para inserir um vídeo em um site utilizamos a tag &ltvideo&gt acompanhado de alguns parâmetros.Ficando assim:</p>
+    <ul>&ltvideo src="aqui vai o vídeo" controls loop autoplay&gt&lt/video&gt</ul>
+    <br>
+    <p>Porém, assim como as imagens, nem todo servidor é compativel com todos os formatos de vídeos, portanto, utilizamos uma tag bem parecida com a que usamos com imagens:</p>
+    <ul>
+        <pre style="font-size: 14px;">
+&ltvideo controls autoplay loop&gt
+    &ltsource src="midia/Pexels Videos 1779440 (720P).mp4" type="video/mp4"&gt
+    &ltsource src="midia/Pexels Videos 1779440 (720P)(1).webm" type="video/webm"&gt
+    &ltsource src="midia/Pexels Videos 1779440 (720P)(1).mkv" type="video/mkv"&gt
+    &ltInfelizmente seu navegadr não é compatível com o formato do vídeo. Clique aqui para fazer o Dowload.&gt
+&lt/video&gt
+        </pre>
+    </ul>
+
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/Pexels Videos 1779440 (720P).mp4" style="width: 600px;" controls loop autoplay></video>
+    <br>
+    <h2>Inserindo Vídeo do YouTube</h2>
+    <p>Para inserir um vídeo do YouTube no seu site, basta clicar em <strong>compartilhar</strong> e <strong>incorporar.</strong> A vantagem é que desta forma você não precisa se preocupar em armazenamento de vídeo no site, pois o YouTube já faz essa função.</p>
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/r9buAwVBDhA?si=tF9jI70XZakTDH4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

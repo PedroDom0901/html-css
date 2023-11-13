@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes do Google</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+        @font-face {
+            font-family: 'Christmas';
+            src: url('Fonts/MerryChristmasStar.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype 
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-attachment: fixed;
+            font-size: 30px;
+            background-image: linear-gradient(45deg, #3A2618, #37423D, #9A8873);
+        }
+
+        div{
+            width: 600px;
+            text-align: center;
+            text-indent: 25px;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            background-color: rgba(204, 194, 102, 0.74);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 8px 8px 8px rgba(39, 35, 2, 0.678);
+        }
+
+        a{
+            color: rgba(255, 255, 255, 0.541);
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 55px;
+            margin-top: 40px;
+            margin-bottom: 35px;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify; 
+            margin-left: 50px;
+        }
+
+        h2{
+            font-family: 'Freehand';
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+
+        #p{
+            font-family: 'Freehand';
+            padding: 5px 15px 5px 20px;
+            text-align: justify;
+            text-decoration: underline;
+        }
+
+        #h1-1{
+            font-family: 'Christmas';
+            font-weight: normal;
+            text-align: center;
+            text-shadow: 2px 2px 2px #cc131375;
+            text-decoration: none;
+        }
+
+        #p2{
+            font-family: 'Christmas';
+            font-size: 40px;
+            text-align: justify;
+            margin: 50px;
+        }
+
+        #p3{
+            font-family: 'Christmas';
+            font-size: 40px;
+            text-align: right;
+            margin: 50px;
+        }
+
+        #p4{
+            font-family: 'Christmas';
+            font-size: 60px;
+            text-align: center;
+            margin: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes Externas</h1>
+    <p>Site para ampliar as fonts : <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a><br>
+
+    Outro site com mais opções de fontes: <a href="https://www.dafont.com/pt/" target="_blank">dafont.com</a><br>
+
+    Sites para descobrir fontes de imagens:
+    <a href="https://www.whatfontis.com/" target="_blank">whatfontis.com</a> 
+    / <a href="https://www.fontsquirrel.com/" target="_blank">fontsquirrel.com</a> 
+    / <a href="https://www.myfonts.com/" target="_blank">myfonts.com</a>
+    </p>
+
+    <div>
+        <h2>Carta de Agradecimento</h2>
+        <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quos dolorum, laboriosam et doloremque voluptate nobis ducimus. Repudiandae atque quos facilis voluptatibus voluptas, delectus officia enim, perferendis quia excepturi aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto saepe architecto earum velit? Voluptas sit eos explicabo velit, aut id reprehenderit totam quod, inventore neque facere. Voluptatem, soluta officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, unde ducimus. Quas sapiente et modi commodi quam mollitia. Maxime culpa omnis sunt architecto mollitia aspernatur esse cupiditate labore iste neque.</p>
+    </div>
+
+    <div>
+        <h1 id="h1-1">1 Marry 0 Christmas 1</h1>
+        <p id="p2">6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum doloremque culpa consequuntur neque, non expedita quasi omnis beatae! Vero earum sed similique minima perspiciatis facilis atque ipsa tempora eum! </p>
+        <p id="p2">6 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi maxime velit nemo, quis debitis facere expedita suscipit doloremque ratione. Nisi asperiores nam sequi voluptatibus, maxime quo fugit ut ex vel! </p>
+        <p id="p3">9 By Name 9</p>
+        <p id="p4">1 3 4 6</p>
+    </div>
+</body>
+</html>

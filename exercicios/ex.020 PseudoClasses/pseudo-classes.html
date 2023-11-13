@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            text-align: justify;
+            background-color:  rgba(143, 116, 18, 0.466);
+            margin: 30px;
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p{
+           text-indent: 30px; 
+        }
+
+        .botao{
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightblue;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .botao:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .texto-escondido{
+            background-color: lightgray;
+            width: 300px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .texto-escondido:hover{
+            background-color: blueviolet;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .texto-escondido > p{
+            display: none;
+        }
+
+        .texto-escondido:hover > p{
+            display: inline;
+            background-color: rgb(85, 5, 160);
+            border-radius: 15px;
+            padding: 0 5px 0 5px;
+        }
+
+        pre{
+            font-family: Arial, Helvetica, sans-serif; background-color: #0d111af5;
+            border-radius: 30px;
+            width: 470px;
+            margin: 0 0 30px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <h2>O que é!</h2>
+    <p>As Pseudo-classes são uma mudança/ação gerada em um elemento do seu site ao ato de interação do internalta.</p>
+    <p>No caso de um <strong>id</strong> ou <strong>classe</strong> usamos <strong>#</strong> e <strong>.</strong> respectivamente. No caso de uma <strong>Pseudo-classe</strong> utilize dois pontos (:). E geralmente deve estar relacionada a um elemento ou uma classe. Por exemplo, utilizando um elemento &ltdiv&gt , e uma Pseudo-classe <strong>hover</strong>, este seria o resultado: <span style="background-color: rgba(255, 255, 0, 0.562); border-radius: 5px; padding: 0 5px 0 5px;">div:hover</span>. E deve ser usado num arquivo CSS, seja ele interno ou externo. </p>
+    <p>A Pseudo-classe <strong>hover</strong> indica uma mudança em um determinado elemento do seu site. Por exemplo, observe esse três botões abaixo.</p>
+    <div class="botao">1</div>
+    <div class="botao">2</div>
+    <div class="botao">3</div>
+
+    <p>Observe que ao passar o mouse por cima deles, haverá uma animação. Essa é uma representação na prática de como funciona o :houver.</p>
+
+    <h2>Exemplo de houver com elemento escondido</h2>
+        <p>Passe o mouse no texto a baixo.</p>
+        <div class="texto-escondido">Passe o mouse aqui!
+            <p>texto escondido...</p>
+        </div>
+        <p>Fim do hover</p>
+
+        <h3>Para entender melhor</h3>
+        <p>Para realizar essa ação, utiliamos (&gt) + a tag do elemento, ficando : <br> 
+            <div style="margin-left: 30px;">Primeiro passo:</div>
+            <pre>
+    <i style="color: green;">.texto-escondido</i><span style="color: purple;"> <span style="color: purple;">> p </span><span style="color: rgba(235, 235, 11, 0.747);">{
+          <span style="color: lightblue;">display : none;</span>
+    }</span></pre>
+
+             <div style="margin-left: 30px;">Segundo passo:</div>
+             <pre>
+    <i style="color: green;">.texto-escondido</i><span style="color: purple;"> : </span><i style="color: green;">hover </i> <span style="color: purple;">> p </span><span style="color: rgba(235, 235, 11, 0.747);">{ 
+          <span style="color: lightblue;">display: block;</span>
+          <span style="color: lightblue;">elemento 2</span>
+          <span style="color: lightblue;">elemento 3</span>
+          <span style="color: lightblue;">elemento 4</span>
+    }</span></pre>
+        </p>
+        <p>Onde <i style="color: green;">.texto-escondido</i> é uma classe criada no HTML , <i style="color: green;">hover </i> é a função,  <span style="color: purple;">> </span> simboliza que o p é filho, ou seja, o parágrafo que esta dentro da classe <i style="color: green;">.texto-escondido</i>.</p>
+
+        <p>Observe que no Primeiro passo é utilizado <i style="color: green;">.texto-escondido</i><span style="color: purple;"> > p </span> e no Segundo foi acrescentado apenas o <i style="color: green;">hover </i>, pois é no segundo passo que a mágica acontece, porém, isso não quer dizer que o primeiro não seja importante, pois sem ele, a função não fuinciona, e é importante que os primeiros elementos sejam usados conforme no exemplo, sendo: <br>
+        <span style="text-decoration: underline;">Primeiro passo:</span> <span style="color: lightblue; background-color: #0d111af5; border-radius: 5px;">display : none;</span> <br>
+    <span style="text-decoration: underline;">Segundo passo:</span> <span style="color: lightblue; background-color: #0d111af5; border-radius: 5px;">display: block;</span> </p>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elemento</title>
+    <style>
+
+        /*Seletores Personalizados
+             # = id;
+             . = classe;
+             : = pseudo-classe;
+             :: = pseudo-elemento;
+             > = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        a{
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        .especial{
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+
+        .especial::before{
+            content: '=>';
+        }
+
+        .especial::after{
+            content: '<=';
+        }
+
+        pre{
+            background-color: rgba(255, 196, 0, 0.699);
+            width: 300px;
+            padding-left: 20px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links com Pseudo-classes</h1>
+    <pre>Seletores Personalizados:
+    # = id;
+    . = classe;
+    : = pseudo-classe;
+    :: = pseudo-elemento;
+    > = children</pre>
+    <p>Observe os links abaixo, ao passar o mouse sobre eles, e ao clicar, você perceberá algumas ações.</p>
+    <ul>
+        <li><a href="https://github.com/PedroDom0901" target="_blank" class="especial">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/pedro-domingueti-a63701158" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+    </ul>
+    <p>Foi utilizado os pseudo-classes: <i style="color: green;">:hover</i>, <i style="color: green;">:visited</i> e <i style="color: green;">:active</i>.</p>
+    <p>E os peseudo-elementos: <i style="color: green;">::before</i> e <i style="color: green;">::after</i>. </p>
+</body>
+</html>

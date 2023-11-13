@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Lista Ordenada</h2>
+    <p>Para criar uma <strong>lista ordenada</strong> utiliza-se a tag <strong>&ltol&gt</strong> como pai e <strong>&ltli&gt</strong> como tag filha, ficando assim:</p>
+
+    <pre> &ltol type="1" start="1"&gt 
+    &ltli&gtAcordar&lt/li&gt
+    &ltli&gtTrabalhar&lt/li&gt
+    &ltli&gtEstudar&lt/li&gt
+    &ltli&gtDormir&lt/li&gt
+ &lt/ol&gt
+    </pre>
+
+    <p>Este é o resultado:</p>
+    <ol>
+        <li>Acordar;</li>
+        <li>Trabalhar;</li>
+        <li>Estudar;</li>
+        <li>Dormir.</li>
+    </ol>
+
+    <h2>Lista Desordenada</h2>
+    <p>A lista desordenada segue o mesmo pricipio, mudando apenas a tag &ltol&gt por &ltul&gt. </p>
+    <ul>
+        <li>Pão;</li>
+        <li>Café;</li>
+        <li>Açucar.</li>
+    </ul>
+
+    <h2>Minhas Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas:</li>
+        <ol type="a">
+            <li>Clipper;</li>
+            <li>Visual Basic;</li>
+            <li>Delphin.</li>
+        </ol>
+        <li>Novas:</li>
+        <ol type="a" start="4">
+            <li>PHP;</li>
+            <li>Python;</li>
+            <li>JavaScript;</li>
+            <li>Kotlin.</li>
+        </ol>
+    </ol>
+
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>SNES</li>
+        <ul>
+            <li>Super Mario;</li>
+            <li>Donkey Kong;</li>
+            <li>The Legends of Zelda.</li>
+        </ul>
+        <li>Nintendo 64</li>
+        <ul>
+            <li>The Legends of Zelda;</li>
+            <ul>
+                <li>Zelda Ocarina of Time;</li>
+                <li>Zelda Majora's Mask.</li>
+            </ul>
+            <li>Mario World;</li>
+            <li>Donkey Kong.</li>
+        </ul>
+    </ol>
+
+    <h2>Listas de Definições</h2>
+    <p>Nas Listas de Definições usa-se três tags: &ltdl&gt , &ltdt&gt , &ltdd&gt . <br>Ficando assim:</p>
+    <pre>
+    &ltdl&gt
+        &ltdt&gtTermo&lt/dt&gt
+        &ltdd&gtDescrição&lt/dd&gt
+    &lt/dl&gt
+    </pre>
+    <p>Exemplo:</p>
+    <dl>
+        <dt>HTML:</dt>
+        <dd>Linguagem de Marcação de Texto para Sites.</dd>
+        <dt>CSS:</dt>
+        <dd>Linguagem de EStilos para Sites.</dd>
+        <dt>JavaScript:</dt>
+        <dd>Linguagem de programação para interatividades no site.</dd>
+    </dl>
+</body>
+</html>
