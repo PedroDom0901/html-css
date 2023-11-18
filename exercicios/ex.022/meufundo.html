@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando posicionamento de fundo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightgray;
+            width: 1286px;
+        }
+        div.quadros{
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 277px;
+            width: 414px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        div#q1{
+            background-image: url(imagens/wallpaper003.jpg);
+        }
+        div#q2{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: top center;
+        }
+        div#q3{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: right top;
+        }
+        div#q4{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: left center;
+        }
+        div#q5{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: center center;
+        }
+        div#q6{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: right center;
+        }
+        div#q7{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: left bottom;
+        }
+        div#q8{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: center bottom;
+        }
+        div#q9{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: right bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadros" id="q1"></div>
+    <div class="quadros" id="q2"></div>
+    <div class="quadros" id="q3"></div>
+    <div class="quadros" id="q4"></div>
+    <div class="quadros" id="q5"></div>
+    <div class="quadros" id="q6"></div>
+    <div class="quadros" id="q7"></div>
+    <div class="quadros" id="q8"></div>
+    <div class="quadros" id="q9"></div>
+</body>
+</html>
