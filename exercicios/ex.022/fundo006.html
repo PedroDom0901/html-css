@@ -6,9 +6,21 @@
     <title>background fixed</title>
     <style>
         body{
+            /*
+            background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
             background-attachment: fixed;
+            */
+
+            /*shorthand background:
+               color > image > position > repeat > [size] > attachment.
+            
+               OBS:NO MOMENTO "background-size" NÃO FUNCIONA COM SHORTHAND (PODE SER QUE FUTURAMENTE FUNCIONE), PORTAMTO DEVE SER COLOCADO SEPARADO , COMO VOCÊ PODE VER ABAIXO. 
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
         div{
